@@ -6,10 +6,10 @@ const server = require("http").createServer(app);
 const io = require("socket.io")(server);
 
 // Serve static files from the "public" directory
-		app.use(express.static(path.join(__dirname + "/public")));
+app.use(express.static(path.join(__dirname + "/public")));
 
 // Handle Socket.io connections
-		io.on("connection", function (socket) {
+	io.on("connection", function (socket) {
 		// Handle sender joining a room
 		socket.on("sender-join", function (data) {
 			socket.join(data.uid);
