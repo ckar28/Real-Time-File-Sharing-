@@ -14,9 +14,6 @@ This web application allows users to securely share files in real-time. It is de
 
 - **Client-Side Download**: Receivers can download files directly from the client-side, enhancing the user experience and making it convenient to access shared files.
 
-## Architecture
-
-The project adopts a hybrid architecture that combines elements of both client-server and peer-to-peer (P2P) communication. It uses Node.js and Express to serve web content and Socket.io for real-time communication. This architecture provides scalability, centralized control, and low-latency updates.
 
 ## Installation
 
